@@ -16,7 +16,7 @@
 
     <TabPane prefWidth="900" prefHeight="430">
 
-        <!-- Clients Tab -->
+       
         <Tab text="Clients">
             <VBox spacing="10" alignment="CENTER">
                 <TableView fx:id="tblClients" prefHeight="250" prefWidth="800">
@@ -33,7 +33,7 @@
             </VBox>
         </Tab>
 
-        <!-- Cars Tab -->
+        
         <Tab text="Cars">
             <VBox spacing="10" alignment="CENTER">
                 <TableView fx:id="tblCars" prefHeight="250" prefWidth="800">
@@ -53,7 +53,7 @@
             </VBox>
         </Tab>
 
-        <!-- Demandes Locations Tab -->
+        
         <Tab text="Demandes Locations">
             <VBox spacing="10" alignment="CENTER">
                 <TableView fx:id="tblDemandes" prefHeight="250" prefWidth="800">
@@ -76,7 +76,7 @@
             </VBox>
         </Tab>
 
-        <!-- Locations Acceptées Tab -->
+        
         <Tab text="Locations acceptées">
             <VBox spacing="10" alignment="CENTER">
                 <TableView fx:id="tblLocations" prefHeight="250" prefWidth="800">

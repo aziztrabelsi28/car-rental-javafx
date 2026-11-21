@@ -59,19 +59,6 @@ public class User {
 
 
 
-    /*public boolean login(){
-        Scanner scan= new Scanner(System.in);
-        System.out.println("donner votre username");
-        String inputUsername=scan.nextLine();
-        System.out.println("donner votre password");
-        String inputPassword=scan.nextLine();
-        if ((inputUsername.equals(getUsername()))&&(inputPassword.equals(getPassword()))){
-            System.out.println("login successful");
-            return true;
-        }
-        System.out.println("login failed please check credentials");
-        return false;
-        
-    }*/
+
 
 }

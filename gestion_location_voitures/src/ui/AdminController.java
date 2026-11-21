@@ -44,7 +44,7 @@ public class AdminController {
     @FXML private TableColumn<DemandeLocation, String> colTypePaiement;
     @FXML private TableColumn<DemandeLocation, String> colPrix;
 
-    // Locations accepted/history tab
+    
     @FXML private TableView<Location> tblLocations;
     @FXML private TableColumn<Location, Integer> colLocId;
     @FXML private TableColumn<Location, String> colLocClient;

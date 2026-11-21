@@ -18,7 +18,7 @@ public class GestionVoitures {
         this.voitureDAO = voitureDAO;
     }
 
-    // --- Accès aux données brutes ---
+    
 
     public List<Voiture> getListeVoitures() {
         try {
@@ -38,7 +38,7 @@ public class GestionVoitures {
         }
     }
 
-    // --- CRUD ---
+    
 
     public void ajouterVoiture(Voiture v) {
         try {
@@ -98,7 +98,7 @@ public class GestionVoitures {
         }
     }
 
-    // --- Affichage console (optionnel pour debug) ---
+    
 
     public void afficherListeVoitures() {
         List<Voiture> liste = getListeVoitures();

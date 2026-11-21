@@ -16,7 +16,7 @@
         <Button fx:id="btnLogout" text="Logout" />
     </HBox>
     
-    <!-- TableView hidden by default; shown when "Voir Voitures Disponibles" is clicked -->
+    
     <TableView fx:id="tblVoituresDispo" prefHeight="200" prefWidth="400" visible="false">
         <columns>
             <TableColumn fx:id="colId" text="ID" prefWidth="40"/>
@@ -27,7 +27,7 @@
         </columns>
     </TableView>
 
-    <!-- You can add more TableViews below for Mes Factures or other data displays -->
+    
 
 </VBox>
 

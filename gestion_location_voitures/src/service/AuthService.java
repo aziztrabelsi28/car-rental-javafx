@@ -25,7 +25,7 @@ public class AuthService {
         this.clientDAO = clientDAO;
     }
 
-    // --- Authentification ---
+    
 
     public boolean login(String username, String password) {
         try {
@@ -47,7 +47,7 @@ public class AuthService {
                                 fullClient.getNom(),
                                 fullClient.getPrenom(),
                                 sharedGestionVoitures,
-                                new GestionDemandesLocations() // à adapter si tu veux passer les DAO ici aussi
+                                new GestionDemandesLocations() 
                         );
                         currentUser = fullClient;
                     } else {
@@ -81,7 +81,7 @@ public class AuthService {
         currentUser = null;
     }
 
-    // --- Inscription ---
+    
 
     public boolean register(String username,
                             String password,

@@ -32,7 +32,7 @@ public class MainApp extends Application {
         UserDAO userDAO = new UserDAO();
         
         sharedGestionVoitures = new GestionVoitures(voitureDAO);
-        ClientDAO clientDAO = new ClientDAO(sharedGestionVoitures, null); // second arg unused now
+        ClientDAO clientDAO = new ClientDAO(sharedGestionVoitures, null); 
         DemandeLocationDAO demandeLocationDAO = new DemandeLocationDAO(clientDAO, voitureDAO);
         LocationDAO locationDAO = new LocationDAO(demandeLocationDAO);
         FactureDAO factureDAO = new FactureDAO(locationDAO);
