@@ -1,0 +1,13 @@
+# Compiled output
+bin/
+*.class
+
+# Editor settings (contain machine-specific paths)
+.vscode/
+
+# draw.io / MySQL Workbench backups
+.$*.bkp
+*.mwb.bak
+
+# Local notes that may contain credentials
+base de donnee/base de donnee.txt

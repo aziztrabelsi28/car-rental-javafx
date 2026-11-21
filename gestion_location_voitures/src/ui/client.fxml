@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="ui.ClientController"
+      spacing="10" alignment="CENTER" style="-fx-padding: 15;">
+
+    <Label text="Client Dashboard" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+    
+    <HBox spacing="10">
+        <Button fx:id="btnViewCars" text="Voir Voitures Disponibles" />
+        <Button fx:id="btnRequestRent" text="Demander Location" />
+        <Button fx:id="btnViewInvoices" text="Mes Factures" />
+        <Button fx:id="btnLogout" text="Logout" />
+    </HBox>
+    
+    <!-- TableView hidden by default; shown when "Voir Voitures Disponibles" is clicked -->
+    <TableView fx:id="tblVoituresDispo" prefHeight="200" prefWidth="400" visible="false">
+        <columns>
+            <TableColumn fx:id="colId" text="ID" prefWidth="40"/>
+            <TableColumn fx:id="colMarque" text="Marque" prefWidth="100"/>
+            <TableColumn fx:id="colType" text="Type" prefWidth="80"/>
+            <TableColumn fx:id="colPrixJour" text="Prix/Jour" prefWidth="80"/>
+            <TableColumn fx:id="colDisponible" text="Disponible" prefWidth="80"/>
+        </columns>
+    </TableView>
+
+    <!-- You can add more TableViews below for Mes Factures or other data displays -->
+
+</VBox>
+
+
+
+
+
+

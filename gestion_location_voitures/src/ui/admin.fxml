@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="ui.AdminController"
+      spacing="10"
+      alignment="TOP_CENTER">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <Label text="Admin Dashboard" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+
+    <TabPane prefWidth="900" prefHeight="430">
+
+        <!-- Clients Tab -->
+        <Tab text="Clients">
+            <VBox spacing="10" alignment="CENTER">
+                <TableView fx:id="tblClients" prefHeight="250" prefWidth="800">
+                    <columns>
+                        <TableColumn text="ID" fx:id="colClientId"/>
+                        <TableColumn text="Nom" fx:id="colClientNom"/>
+                        <TableColumn text="Prenom" fx:id="colClientPrenom"/>
+                    </columns>
+                </TableView>
+                <HBox spacing="10" alignment="CENTER">
+                    <Button text="Ajouter Client" fx:id="btnAddClient"/>
+                    <Button text="Supprimer Client" fx:id="btnDeleteClient"/>
+                </HBox>
+            </VBox>
+        </Tab>
+
+        <!-- Cars Tab -->
+        <Tab text="Cars">
+            <VBox spacing="10" alignment="CENTER">
+                <TableView fx:id="tblCars" prefHeight="250" prefWidth="800">
+                    <columns>
+                        <TableColumn text="ID" fx:id="colCarId"/>
+                        <TableColumn text="Marque" fx:id="colCarMarque"/>
+                        <TableColumn text="Type" fx:id="colCarType"/>
+                        <TableColumn text="Prix/jour" fx:id="colCarPrix"/>
+                        <TableColumn text="Disponible" fx:id="colCarDispo"/>
+                    </columns>
+                </TableView>
+                <HBox spacing="10" alignment="CENTER">
+                    <Button text="Ajouter voiture" fx:id="btnAddCar"/>
+                    <Button text="Modifier voiture" fx:id="btnEditCar"/>
+                    <Button text="Supprimer voiture" fx:id="btnDeleteCar"/>
+                </HBox>
+            </VBox>
+        </Tab>
+
+        <!-- Demandes Locations Tab -->
+        <Tab text="Demandes Locations">
+            <VBox spacing="10" alignment="CENTER">
+                <TableView fx:id="tblDemandes" prefHeight="250" prefWidth="800">
+                    <columns>
+                        <TableColumn text="ID" fx:id="colDemandeId"/>
+                        <TableColumn text="Client" fx:id="colClient"/>
+                        <TableColumn text="Voiture" fx:id="colVoiture"/>
+                        <TableColumn text="Type Voiture" fx:id="colTypeVoiture"/>
+                        <TableColumn text="Type" fx:id="colType"/>
+                        <TableColumn text="Début" fx:id="colDebut"/>
+                        <TableColumn text="Fin" fx:id="colFin"/>
+                        <TableColumn text="Type de Paiement" fx:id="colTypePaiement"/>
+                        <TableColumn text="Prix Total" fx:id="colPrix"/>
+                    </columns>
+                </TableView>
+                <HBox spacing="10" alignment="CENTER">
+                    <Button text="Accepter" fx:id="btnAcceptDemande"/>
+                    <Button text="Supprimer" fx:id="btnDeleteDemande"/>
+                </HBox>
+            </VBox>
+        </Tab>
+
+        <!-- Locations Acceptées Tab -->
+        <Tab text="Locations acceptées">
+            <VBox spacing="10" alignment="CENTER">
+                <TableView fx:id="tblLocations" prefHeight="250" prefWidth="800">
+                    <columns>
+                        <TableColumn text="ID" fx:id="colLocId"/>
+                        <TableColumn text="Client" fx:id="colLocClient"/>
+                        <TableColumn text="Voiture" fx:id="colLocVoiture"/>
+                        <TableColumn text="Type Voiture" fx:id="colLocTypeVoiture"/>
+                        <TableColumn text="Type Location" fx:id="colLocTypeLocation"/>
+                        <TableColumn text="Début" fx:id="colLocDebut"/>
+                        <TableColumn text="Fin" fx:id="colLocFin"/>
+                        <TableColumn text="Type Paiement" fx:id="colLocTypePaiement"/>
+                        <TableColumn text="Prix" fx:id="colLocPrix"/>
+                    </columns>
+                </TableView>
+            </VBox>
+        </Tab>
+    </TabPane>
+
+    <Button text="Logout" fx:id="btnLogout" maxWidth="150"/>
+</VBox>
+
+
+
+
+
+
+
+
+
+
+
